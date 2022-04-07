@@ -7,9 +7,6 @@ import Nav from './components/Nav'
 
 
 function App() {
-  var [count, setCount] = useState(0);
-
-
   return (
     <div className="App">
       <Nav></Nav>
