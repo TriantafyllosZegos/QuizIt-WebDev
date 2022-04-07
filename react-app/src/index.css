@@ -79,9 +79,11 @@ code {
   align-items: center;
   gap:0.5rem;
   margin-top: 2em;
+  overflow-y: scroll;
 }
 .QuizInfo{
   display: flex;
+  align-items: center;
   gap: 0.5em;
   background: linear-gradient(45deg,var(--blue1),var(--blue3));
   border-radius: 2em;
@@ -89,19 +91,37 @@ code {
   width: 80%;
 }
 .QuizInfo img{
-  width: 15%;
+  width: 30%;
+}
+.QuizInfo span{
+  width: 40%;
+}
+.QuizInfo button{
+  width: fit-content;
+  margin:auto;
+  padding:2em;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+
 }
 h1{
   color:var(--yellow);
-  font-size:40px
+  font-size:40px;
+  margin:0;
 }
 h2{
   color:var(--yellow);
-  font-size:30px
+  font-size:30px;
+  margin:0;
 }
 h3{
   color:var(--yellow);
-  font-size:20px
+  font-size:20px;
+  margin:0;
 }
 label{
   width:100%;
