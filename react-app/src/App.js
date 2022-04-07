@@ -1,17 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from "react";
+import Nav from './components/Nav'
+
+
+
 
 function App() {
+  var [count, setCount] = useState(0);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p Style="font-size:100px;">
-          Welcome to <code Style="color:yellow;">Q</code><a Style="color:white;">u</a><a Style="color:orange;">i</a><a Style="color:purple;">z</a><a Style="color:red;">I</a><a Style="color:green;">T</a>.
-        </p>
-      </header>
+      <Nav></Nav>
     </div>
   );
 }
 
+
+
 export default App;
+
+
