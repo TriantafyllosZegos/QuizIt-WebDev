@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import ph from "../assets/images/placeholder.png";
 
-export default class QuizInfo extends Component {
-  render() {
+export default function QuizInfo(){
     return (
       <div className="QuizInfo">
         <div className="flex">
@@ -21,4 +20,3 @@ export default class QuizInfo extends Component {
       </div>
     );
   }
-}

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import QuizInfo from './QuizInfo'
 
-export default class QuizContainer extends Component {
-  render() {
+export default function QuizContainer (){
     return (
       <div className="QuizContainer">
         <QuizInfo></QuizInfo>
@@ -12,4 +11,3 @@ export default class QuizContainer extends Component {
       </div>
     );
   }
-}

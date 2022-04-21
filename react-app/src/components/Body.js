@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import QuizContainer from './QuizContainer'
 
-export default class Body extends Component {
-  render() {
+export default function Body(){
     return (
       <div className="bodywithnav">
         
         <div>
-          <h3>Search for</h3>
+          <br />
+          <h3>Search for a quiz</h3>
+          <br />
           <input type="text" placeholder="search..." />
         </div>
 
@@ -15,4 +16,3 @@ export default class Body extends Component {
       </div>
     );
   }
-}

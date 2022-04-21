@@ -1,14 +1,12 @@
 
 :root {
-  --gray1: rgb(40, 40, 45);
-  --gray2: rgb(60, 60, 75);
-  --gray3: rgb(80, 80, 90);
-  --white: rgb(255,255,255);
-  --black: rgb(0,0,0);
-  --blue1: rgb(70, 110, 140);
-  --blue2: rgb(110, 175, 200);
-  --blue3: rgb(130, 205, 225);
-  --yellow: rgb(200,200,0);
+  --white: rgb(240, 240, 240);
+  --black: rgb(15,15,15);
+  --blue4: hsl(217, 63%, 14%);
+  --blue3: hsl(223, 48%, 25%);
+  --blue2: hsl(229, 33%, 36%);
+  --blue1: hsl(234, 35%, 57%);
+  --yellow: hsl(50, 90%, 50%);
 }
 
 * {
@@ -19,7 +17,7 @@ body {
   margin: 0;
   font-size:14px;
   color:var(--white);
-  background-color:var(--gray1);
+  background-color:var(--blue4);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -37,7 +35,7 @@ code {
   top:0;
   height:4rem;
   z-index:100;
-  background-color:var(--gray2);
+  background-color:var(--blue2);
   padding:0.5rem;
   display: flex;
   flex-direction: row;
@@ -54,8 +52,11 @@ code {
   font-size: 1em;
   border-radius:10px;
   margin-right:0.5em;
-  background-color:var(--gray3);
+  background-color:var(--blue2);
   cursor:pointer;
+}
+h1.nav-icon{
+  margin-right: auto;
 }
 .nav-icon svg {
     height: 80%;
@@ -85,7 +86,7 @@ code {
   display: flex;
   align-items: center;
   gap: 0.5em;
-  background: linear-gradient(45deg,var(--blue1),var(--blue3));
+  background: linear-gradient(60deg,var(--blue3),var(--blue1));
   border-radius: 2em;
   padding: 2em;
   width: 80%;
