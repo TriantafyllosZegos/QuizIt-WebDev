@@ -2,7 +2,7 @@
 :root {
   --white: rgb(240, 240, 240);
   --black: rgb(15,15,15);
-  --blue4: hsl(217, 63%, 14%);
+  --blue4: hsl(248, 29%, 31%);
   --blue3: hsl(223, 48%, 25%);
   --blue2: hsl(229, 33%, 36%);
   --blue1: hsl(234, 35%, 57%);
@@ -17,7 +17,7 @@ body {
   margin: 0;
   font-size:14px;
   color:var(--white);
-  background-color:var(--blue4);
+  background-color:var(--black);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -35,7 +35,7 @@ code {
   top:0;
   height:4rem;
   z-index:100;
-  background-color:var(--blue2);
+  background-color:var(--blue4);
   padding:0.5rem;
   display: flex;
   flex-direction: row;
@@ -52,7 +52,7 @@ code {
   font-size: 1em;
   border-radius:10px;
   margin-right:0.5em;
-  background-color:var(--blue2);
+  background-color:var(--blue4);
   cursor:pointer;
 }
 h1.nav-icon{
