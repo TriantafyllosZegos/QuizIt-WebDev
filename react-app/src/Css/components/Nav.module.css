@@ -4,7 +4,7 @@
     top:0;
     height:4rem;
     z-index:100;
-    background-color:var(--blue4);
+    background-color:var(--black2);
     padding:0.5rem;
     display: flex;
     flex-direction: row;
@@ -21,13 +21,18 @@
     font-size: 1em;
     border-radius:10px;
     margin-right:0.5em;
-    background-color:var(--blue4);
     cursor:pointer;
   }
-  h1.navicon{
+  .navicon:first-child{
     margin-right: auto;
+    color:var(--yellow);
+    font-weight: bold;
+    text-decoration: none;
   }
   .navicon svg {
       height: 80%;
       width: 80%;
+  }
+  svg path{
+    stroke:var(--yellow)
   }
