@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import QuizContainer from "C:/Users/Aggelos/Desktop/QuizIt-WebDev/react-app/src/components/QuizContainer.js";
-import Layout from "C:/Users/Aggelos/Desktop/QuizIt-WebDev/react-app/src/components/Layout";
+import QuizContainer from "../../components/QuizContainer";
 
 export default function Quizzes() {
   return (
