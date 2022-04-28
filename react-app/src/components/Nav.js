@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {GrUser,GrHistory} from 'react-icons/gr'
 import styles from '../css/components/Nav.module.css'
 import {NavLink} from 'react-router-dom'
-import logo from "../assets/icons/logo.png";
+import logo from "../assets/icons/logolight.png";
 
 export default function Nav(){
     return (
