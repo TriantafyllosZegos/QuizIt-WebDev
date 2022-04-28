@@ -24,7 +24,7 @@ function Profile() {
           <h3 className="card-email">Student</h3>
 
           <label htmlFor="text">Department</label>
-          <h3 className="card-email">Computer Science Computer</h3>
+          <h3 className="card-email">Computer Science Department</h3>
           
           <label htmlFor="password">Password</label>
           <h3 className="card-password">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h3><button>Change Password</button>
