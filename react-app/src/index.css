@@ -8,10 +8,43 @@
   --blue2: hsl(229, 33%, 36%);
   --blue1: hsl(234, 35%, 57%);
   --yellow: hsl(50, 90%, 50%);
+  --fxs:0.7rem;
+  --fs:0.8rem;
+  --fl:1.1rem;
+  --fxl:1.3rem;
+  --fxxl:1.5rem;
 }
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;300;500&family=Raleway:wght@300;500;800&display=swap');
 
 * {
   box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+  width: .75em;
+  height: .75em
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black2);
+  -webkit-box-shadow: inset 0 0 6px rgba(200,200,200,0.3);
+  border-radius:5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: -webkit-linear-gradient(45deg,
+                                            rgba(255, 255, 255, .2) 25%,
+                        transparent 25%,
+                        var(--yellow) 35%,
+                        transparent 50%,
+                        rgba(255, 255, 255, .2) 50%,
+                        rgba(255, 255, 255, .2) 75%,
+                        transparent 75%,
+                        var(--yellow));
+  border-radius:5px;
 }
 
 body {
@@ -19,9 +52,8 @@ body {
   font-size:14px;
   color:var(--white);
   background-color:var(--black1);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins'; /*font-weight:100,300,500*/
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -29,12 +61,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    font-size :var(--fxs);
+    opacity:0.5;
+
 }
 
 .bodywithnav{
   position: absolute;
-  height: calc(100% - 4rem);
-  top:4rem;
+  height:100%;
+  padding-top:4rem;
   width:100%;
 }
 .placeholder{
@@ -42,14 +77,19 @@ code {
   width: 150px;
   height: 100px;
 }
-.QuizContainer{
-  display:flex;
+.QuizContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   flex-direction: column;
-  align-content: center;
-  align-items: center;
-  gap:0.5rem;
-  margin-top: 2em;
+  align-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  padding: 1em;
+  /* margin-top: 2em; */
   overflow-y: scroll;
+  height: 80%;
+  justify-content: start;
+  justify-items: center;
 }
 .QuizInfo{
   display: flex;
@@ -58,13 +98,13 @@ code {
   background: var(--black2);
   border-radius: 2em;
   padding: 2em;
-  width: 80%;
 }
 .QuizInfo img{
   width: 30%;
 }
 .QuizInfo span{
   width: 40%;
+  font-size: var(--fxs);
 }
 .QuizInfo button{
   width: fit-content;
@@ -80,17 +120,17 @@ code {
 }
 h1{
   color:var(--yellow);
-  font-size:40px;
+  font-size:var(--fxxl);
   margin:0;
 }
 h2{
   color:var(--yellow);
-  font-size:30px;
+  font-size:var(--fxl);
   margin:0;
 }
 h3{
   color:var(--yellow);
-  font-size:20px;
+  font-size:var(--fl);
   margin:0;
 }
 label{
@@ -111,10 +151,12 @@ button{
   appearance: none;
   border-radius: 1em;
   color:var(--black1);
+  font-size: var(--fl);
   background-color: var(--yellow);
-  font-size: 1.5rem;
   transition:0.5s;
   cursor:pointer;
+  
+  font-family: 'Indie Flower', cursive!important;
 }
 button:hover{
   transform:scale(1.1);

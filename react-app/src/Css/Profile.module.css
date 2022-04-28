@@ -1,0 +1,28 @@
+
+
+
+.bodywithnav{
+    display:flex;
+    height:100vh;
+}
+
+
+.card{
+    /* width: 50%; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    width:60%;
+}
+.info{
+    /* width:100%; */
+    text-align:left;
+}
+label{
+    font-size:0.8em;
+    color:var(--white);
+    font-weight:300
+}

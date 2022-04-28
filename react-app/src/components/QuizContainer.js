@@ -8,6 +8,28 @@ export default function QuizContainer (){
         <QuizInfo></QuizInfo>
         <QuizInfo></QuizInfo>
         <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo>
+        <QuizInfo></QuizInfo> 
       </div>
     );
   }

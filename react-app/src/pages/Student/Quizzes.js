@@ -5,7 +5,7 @@ import Layout from "C:/Users/Aggelos/Desktop/QuizIt-WebDev/react-app/src/compone
 export default function Quizzes() {
   return (
       <div className="bodywithnav">
-        <div>
+        <div Style="height:20%">
           <br />
           <h3>Search for a quiz</h3>
           <br />
