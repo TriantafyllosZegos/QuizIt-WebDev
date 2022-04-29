@@ -28,6 +28,7 @@
     color:var(--yellow);
     font-weight: bold;
     text-decoration: none;
+    margin-left:0.5rem
   }
   .navicon svg {
       height: 80%;
@@ -35,4 +36,7 @@
   }
   svg path{
     stroke:var(--yellow)
+  }
+  img{
+    width:55px;
   }

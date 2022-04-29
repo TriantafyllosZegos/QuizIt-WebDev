@@ -8,6 +8,8 @@
   --blue2: hsl(229, 33%, 36%);
   --blue1: hsl(234, 35%, 57%);
   --yellow: #f2cc0d;
+  --green: #1f583c;
+  --red: #491010;
   --fxs:0.7rem;
   --fs:0.8rem;
   --fl:1.1rem;
@@ -70,6 +72,9 @@ code {
   position: absolute;
   height:100%;
   padding-top:4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width:100%;
 }
 .placeholder{
@@ -87,9 +92,19 @@ code {
   padding: 1em;
   /* margin-top: 2em; */
   overflow-y: scroll;
-  height: 80%;
+  height: 90%;
   justify-content: start;
   justify-items: center;
+  scrollbar-color: linear-gradient(45deg,
+  rgba(255, 255, 255, .2) 25%,
+transparent 25%,
+var(--yellow) 35%,
+transparent 50%,
+rgba(255, 255, 255, .2) 50%,
+rgba(255, 255, 255, .2) 75%,
+transparent 75%,
+var(--yellow)) transparent; /* thumb and track color */
+  scrollbar-width: thin;
 }
 .QuizInfo{
   display: flex;
@@ -138,6 +153,7 @@ label{
 }
 input{
   width:30%;
+  min-width:250px;
   padding:1rem;
   border:none;
   appearance: none;

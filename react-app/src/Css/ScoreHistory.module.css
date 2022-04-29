@@ -1,0 +1,33 @@
+
+.bodywithnav{
+    display: flex ;
+    height:100vh;
+}
+table{
+    padding:2em;
+    border-radius: 1em;
+    margin:auto;
+    margin-top: 7em;
+    background: var(--black2);
+}
+th{
+    padding:1em;
+    color:var(--yellow);
+    font-size: var(--fxl);
+
+}
+td{
+    padding:0.5em;
+}
+tr{
+
+}
+tbody tr.success {
+    background-color: var(--green);
+    filter:drop-shadow(0 0 15px black)
+  }
+
+tbody tr.fail {
+    background-color: var(--red);
+    filter:drop-shadow(0 0 10px black)
+  }
