@@ -28,7 +28,8 @@
     color:var(--yellow);
     font-weight: bold;
     text-decoration: none;
-    margin-left:0.5rem
+    margin-left:0.5rem;
+    width:unset;
   }
   .navicon svg {
       height: 80%;
@@ -39,4 +40,15 @@
   }
   img{
     width:55px;
+  }
+  .navicon:first-child{
+    margin-right: auto;
+    color:var(--yellow);
+    font-weight: bold;
+    text-decoration: none;
+    margin-left:0.5rem;
+    width:unset;
+  }
+  img:first-of-type{
+    width:150px
   }
