@@ -46,7 +46,7 @@ function App() {
         <Route path="student/history" element={<ScoreHistory />} />
         <Route path="student/play" element={<QuizPlay id={"12gj123v"}/>} />
         <Route path="student/score" element={<Score score={5} />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage role={user} />} />
       </Routes>
     </div>
   );
@@ -61,7 +61,7 @@ function App() {
           <Route path="teacher/:id/scores" element={<StudentsScores id={"12gj123v"} />} />
           <Route path="teacher/create" element={<CreateQuiz/>} />
           <Route path="teacher/:id/edit" element={<EditQuiz id={"12gj123v"} />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="*" element={<ErrorPage role={user}/>} />
         </Routes>
       </div>
     );
@@ -73,7 +73,7 @@ function App() {
           <Route path="/" element={<Login />}></Route>
           <Route path="/Login" element={<Login />}></Route>
           <Route path="/Signup" element={<Signup />}></Route>
-          <Route path="*" element={<ErrorPage/>} />
+          <Route path="*" element={<ErrorPage role={user}/>} />
         </Routes>
       </div>
     );
