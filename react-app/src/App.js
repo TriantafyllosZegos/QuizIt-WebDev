@@ -13,13 +13,17 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 
 /*Student*/ 
 import Quizzes from "../src/pages/Student/Quizzes";
-import Profile from "../src/pages/Student/Profile";
+import Profile from "../src/pages/Student/Profile"; //used for both currently
 import ScoreHistory from "../src/pages/Student/ScoreHistory";
+import QuizPlay from "../src/pages/Student/QuizPlay";
+import Score from "../src/pages/Student/Score";
 
 
 /*Teacher*/ 
 import MyQuizzes from "../src/pages/Teacher/MyQuizzes";
 import StudentsScores from "../src/pages/Teacher/StudentsScores";
+import CreateQuiz from "../src/pages/Teacher/CreateQuiz";
+import EditQuiz from "../src/pages/Teacher/EditQuiz";
 
 
 
@@ -28,7 +32,7 @@ import ErrorPage from "../src/pages/ErrorPage";
 import Login from "../src/pages/Login";
 import Signup from "../src/pages/Signup";
 
-//STUDENT MONO PROS TO PARON
+//this routing is for testing purposes only
 function App() {
   var user = 'student';
   if (user == 'student'){
@@ -40,6 +44,8 @@ function App() {
         <Route path="/student" element={<Quizzes />}></Route>
         <Route path="student/profile" element={<Profile />} />
         <Route path="student/history" element={<ScoreHistory />} />
+        <Route path="student/play" element={<QuizPlay id={"12gj123v"}/>} />
+        <Route path="student/score" element={<Score score={5} />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
@@ -52,7 +58,9 @@ function App() {
           <Route path="/" element={<MyQuizzes />}></Route>
           <Route path="/teacher" element={<MyQuizzes />}></Route>
           <Route path="teacher/profile" element={<Profile />} />
-          <Route path="teacher/history" element={<ScoreHistory />} />
+          <Route path="teacher/:id/scores" element={<StudentsScores id={"12gj123v"} />} />
+          <Route path="teacher/create" element={<CreateQuiz/>} />
+          <Route path="teacher/:id/edit" element={<EditQuiz id={"12gj123v"} />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
