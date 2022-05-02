@@ -11,11 +11,11 @@
   --purple: #ad1ad1;
   --green: #1f583c;
   --red: #491010;
-  --fxs:0.7rem;
-  --fs:0.8rem;
-  --fl:1.1rem;
-  --fxl:1.3rem;
-  --fxxl:1.5rem;
+  --fxs:0.8rem;
+  --fs:0.9rem;
+  --fl:1.2rem;
+  --fxl:1.4rem;
+  --fxxl:1.6rem;
 }
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;300;500&family=Raleway:wght@300;500;800&display=swap');
@@ -39,13 +39,12 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background-image: -webkit-linear-gradient(45deg,
-                                            rgba(255, 255, 255, .2) 25%,
-                        transparent 25%,
-                        var(--yellow) 35%,
-                        transparent 50%,
-                        rgba(255, 255, 255, .2) 50%,
-                        rgba(255, 255, 255, .2) 75%,
-                        transparent 75%,
+                        var(--purple) ,
+                        transparent ,
+                        var(--yellow) ,
+                        transparent,
+                        var(--purple) ,
+                        transparent,
                         var(--yellow));
   border-radius:5px;
 }
@@ -83,9 +82,10 @@ code {
   width: 150px;
   height: 100px;
 }
+
 .QuizContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
   flex-direction: column;
   align-content: space-between;
   align-items: start;
@@ -97,14 +97,13 @@ code {
   justify-content: start;
   justify-items: center;
   scrollbar-color: linear-gradient(45deg,
-  rgba(255, 255, 255, .2) 25%,
-transparent 25%,
-var(--yellow) 35%,
-transparent 50%,
-rgba(255, 255, 255, .2) 50%,
-rgba(255, 255, 255, .2) 75%,
-transparent 75%,
-var(--yellow)) transparent; /* thumb and track color */
+  var(--purple) ,
+  transparent ,
+  var(--yellow) ,
+  transparent,
+  var(--purple) ,
+  transparent,
+  var(--yellow)); /* thumb and track color */
   scrollbar-width: thin;
 }
 .QuizInfo{
@@ -125,7 +124,7 @@ var(--yellow)) transparent; /* thumb and track color */
 .QuizInfo button{
   width: fit-content;
   margin:auto;
-  padding:2em;
+  padding:2em 1em;
 }
 .flex{
   display: flex;
@@ -154,7 +153,7 @@ label{
 }
 input{
   width:30%;
-  min-width:250px;
+  min-width:200px;
   padding:1rem;
   border:none;
   appearance: none;
@@ -178,4 +177,57 @@ button{
 button:hover{
   transform:scale(1.1);
 
+}
+@media only screen and (max-width: 600px) {
+  :root{
+    --fxs:0.7rem;
+    --fs:0.8rem;
+    --fl:1.1rem;
+    --fxl:1.3rem;
+    --fxxl:1.5rem;
+  }
+  .QuizContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .QuizInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    background: var(--black2);
+    border-radius: 2em;
+    padding: 1em;
+  }
+  .QuizInfo img{
+    width: 50%;
+  }
+  .QuizInfo span{
+    width: unset;
+    font-size: var(--fxs);
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: unset;;
+  
+  }
+  button{
+    border:none;
+    appearance: none;
+    border-radius: 1em;
+    color:var(--black1);
+    font-size: var(--fs);
+    background-color: var(--yellow);
+    transition:0.5s;
+    cursor:pointer;
+    
+    font-family: 'Indie Flower', cursive!important;
+  }
+  .QuizInfo button{
+    width: fit-content;
+    margin:auto;
+    padding:1em;
+  }
 }

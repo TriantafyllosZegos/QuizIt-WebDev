@@ -60,6 +60,27 @@ function ScoreHistory() {
             <td>Programming</td>
             <td>19/20</td>
           </tr>
+          <tr className={styles.fail}>
+            <td>8/2/19</td>
+            <td>Quiz 3</td>
+            <td>Vrakas</td>
+            <td>Programming</td>
+            <td>7/20</td>
+          </tr>
+          <tr className={styles.success}>
+            <td>9/2/19</td>
+            <td>Quiz 4</td>
+            <td>Vrakas</td>
+            <td>Programming</td>
+            <td>20/20</td>
+          </tr>
+          <tr className={styles.success}>
+            <td>10/2/19</td>
+            <td>Quiz 7</td>
+            <td>Vrakas</td>
+            <td>Programming</td>
+            <td>19/20</td>
+          </tr>
         </tbody>
       </table>
     </div>

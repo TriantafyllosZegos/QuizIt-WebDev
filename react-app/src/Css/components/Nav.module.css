@@ -23,7 +23,7 @@
     margin-right:0.5em;
     cursor:pointer;
   }
-  .navicon:first-child{
+  .logo{
     margin-right: auto;
     color:var(--yellow);
     font-weight: bold;
@@ -43,12 +43,12 @@
   }
   .navicon:first-child{
     margin-right: auto;
+    position:static;
     color:var(--yellow);
     font-weight: bold;
     text-decoration: none;
-    margin-left:0.5rem;
     width:unset;
   }
-  img:first-of-type{
+  .logo img{
     width:150px
   }

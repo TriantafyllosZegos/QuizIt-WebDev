@@ -7,7 +7,7 @@ import logo from "../assets/icons/logobig.png";
 export default function Nav(){
     return (
       <div className={styles.nav}>
-        <NavLink className={styles.navicon} to="student"><img src={logo} alt="logo" /></NavLink>
+        <NavLink className={`${styles.navicon} ${styles.logo}`} to="student"><img src={logo} alt="logo" /></NavLink>
         <NavLink className={styles.navicon} to="student/profile"><GrUser/></NavLink>
         <NavLink className={styles.navicon} to="student/history"><GrHistory/></NavLink>
       </div>
