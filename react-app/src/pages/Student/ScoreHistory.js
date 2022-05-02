@@ -6,83 +6,59 @@ import styles from "../../css/ScoreHistory.module.css"
 function ScoreHistory() {
   return (
     <div className="bodywithnav">
-        <h1>Score History</h1>
-      <table>
-        <thead>
-          <tr >
-            <th>Date</th>
-            <th>Quiz Name</th>
-            <th>Teacher's Name</th>
-            <th>Class Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr className={styles.success}>
-            <td>12/2/19</td>
-            <td>Quiz 1</td>
-            <td>Valakh</td>
-            <td>Web Development</td>
-            <td>20/20</td>
-          </tr>
-          <tr className={styles.success}>
-            <td>7/2/19</td>
-            <td>Quiz 2</td>
-            <td>Valakh</td>
-            <td>Web Development</td>
-            <td>19/20</td>
-          </tr>
-          <tr className={styles.fail}>
-            <td>7/2/19</td>
-            <td>Quiz 3</td>
-            <td>Valakh</td>
-            <td>Web Development</td>
-            <td>15/20</td>
-          </tr>
-          <tr className={styles.success}>
-            <td>2/5/19</td>
-            <td>Quiz 6</td>
-            <td>Valakh</td>
-            <td>Web Development</td>
-            <td>19/20</td>
-          </tr>
-          <tr className={styles.fail}>
-            <td>7/2/19</td>
-            <td>Quiz 2</td>
-            <td>Vrakas</td>
-            <td>Programming</td>
-            <td>4/20</td>
-          </tr>
-          <tr className={styles.success}>
-            <td>7/2/19</td>
-            <td>Quiz 2</td>
-            <td>Vrakas</td>
-            <td>Programming</td>
-            <td>19/20</td>
-          </tr>
-          <tr className={styles.fail}>
-            <td>8/2/19</td>
-            <td>Quiz 3</td>
-            <td>Vrakas</td>
-            <td>Programming</td>
-            <td>7/20</td>
-          </tr>
-          <tr className={styles.success}>
-            <td>9/2/19</td>
-            <td>Quiz 4</td>
-            <td>Vrakas</td>
-            <td>Programming</td>
-            <td>20/20</td>
-          </tr>
-          <tr className={styles.success}>
-            <td>10/2/19</td>
-            <td>Quiz 7</td>
-            <td>Vrakas</td>
-            <td>Programming</td>
-            <td>19/20</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className={styles.table}>
+        <div className={styles.head}>
+            <div>Date</div>
+            <div>Quiz Name</div>
+            <div>Teacher's Name</div>
+            <div>Class Name</div>
+            <div>Score</div>
+        </div>
+        <div className={styles.body}>
+          <div className={styles.success}>
+            <div>12/2/19</div>
+            <div>Quiz 1</div>
+            <div>Vakalh</div>
+            <div>Web Development</div>
+            <div>20/20</div>
+          </div>
+          <div className={styles.success}>
+            <div>12/2/19</div>
+            <div>Quiz 1</div>
+            <div>Vakalh</div>
+            <div>Web Development</div>
+            <div>20/20</div>
+          </div>
+          <div className={styles.fail}>
+            <div>12/2/19</div>
+            <div>Quiz 1</div>
+            <div>Vakalh</div>
+            <div>Web Development</div>
+            <div>5/20</div>
+          </div>
+          <div className={styles.success}>
+            <div>12/2/19</div>
+            <div>Quiz 1</div>
+            <div>Vakalh</div>
+            <div>Web Development</div>
+            <div>20/20</div>
+          </div>
+          <div className={styles.success}>
+            <div>12/2/19</div>
+            <div>Quiz 1</div>
+            <div>Vakalh</div>
+            <div>Web Development</div>
+            <div>20/20</div>
+          </div>
+          <div className={styles.success}>
+            <div>12/2/19</div>
+            <div>Quiz 1</div>
+            <div>Vakalh</div>
+            <div>Web Development</div>
+            <div>20/20</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

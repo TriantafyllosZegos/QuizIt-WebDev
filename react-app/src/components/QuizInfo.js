@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import ph from "../assets/images/placeholder.png";
+import {GrNext} from "react-icons/gr";
+import {NavLink} from 'react-router-dom'
 
-export default function QuizInfo(){
+export default function QuizInfo(props){
     return (
       <div className="QuizInfo">
         <div className="flex">
@@ -16,7 +18,7 @@ export default function QuizInfo(){
           voluptatem, non aliquam nemo labore magni aut omnis eum? Numquam velit
           tenetur quo provident natus fugit, voluptas deserunt ad voluptates?
         </span>
-        <button>Start Quiz</button>
+        <button><NavLink to={`/student/play/${props.id}/:page`}><GrNext/></NavLink></button>
       </div>
     );
   }

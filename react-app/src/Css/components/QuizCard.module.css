@@ -1,0 +1,35 @@
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background: var(--black2);
+    border-radius: 1em;
+    max-width:1000px;
+    width:80%
+
+}
+.question{
+    margin-bottom:2em;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1em;
+
+}
+.answer{
+    min-width:150px;
+    font-size:1.25em;
+}
+.counter{
+    margin-top:2em
+}
+.submit{
+    margin-top: 2em;
+    background-color: var(--purple);
+    color:var(--white);
+    min-width:150px;
+}

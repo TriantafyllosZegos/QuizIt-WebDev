@@ -3,10 +3,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 // import Layout from "./components/Layout";
 import Nav from "./components/Nav";
-import Body from "./components/Body";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-
-
 
 
 
@@ -31,7 +28,17 @@ import EditQuiz from "../src/pages/Teacher/EditQuiz";
 import ErrorPage from "../src/pages/ErrorPage";
 import Login from "../src/pages/Login";
 import Signup from "../src/pages/Signup";
-var user = 'teacher';
+
+
+
+
+/*Change this user variable to see the different views from ['student','teacher',any] */
+var user = '';
+
+
+
+
+
 //this routing is for testing purposes only
 function App() {
   if (user == 'student'){
@@ -44,7 +51,7 @@ function App() {
         <Route path="/student" element={<Quizzes />}></Route>
         <Route path="student/profile" element={<Profile />} />
         <Route path="student/history" element={<ScoreHistory />} />
-        <Route path="student/play" element={<QuizPlay id={"12gj123v"}/>} />
+        <Route path="student/play/:id/:page" element={<QuizPlay id={432}/>} />
         <Route path="student/score" element={<Score score={5} />} />
         <Route path="*" element={<ErrorPage role={user} />} />
       </Routes>

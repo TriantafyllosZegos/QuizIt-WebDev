@@ -1,0 +1,11 @@
+.buttoncont{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    .buttoncont{
+        width: 100%;
+    }
+  }
