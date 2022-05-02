@@ -31,14 +31,14 @@ import EditQuiz from "../src/pages/Teacher/EditQuiz";
 import ErrorPage from "../src/pages/ErrorPage";
 import Login from "../src/pages/Login";
 import Signup from "../src/pages/Signup";
-
+var user = 'teacher';
 //this routing is for testing purposes only
 function App() {
-  var user = 'student';
   if (user == 'student'){
   return (
     <div className="App">
-      <Nav></Nav>
+      <Nav role={user} ></Nav>
+      
       <Routes>
         <Route path="/" element={<Quizzes />}></Route>
         <Route path="/student" element={<Quizzes />}></Route>
@@ -53,7 +53,7 @@ function App() {
 }else if(user == 'teacher'){
     return (
       <div className="App">
-        <Nav></Nav>
+        <Nav role={user} ></Nav>
         <Routes>
           <Route path="/" element={<MyQuizzes />}></Route>
           <Route path="/teacher" element={<MyQuizzes />}></Route>
